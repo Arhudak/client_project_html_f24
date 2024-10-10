@@ -1,0 +1,106 @@
+
+h1 {
+    font-size: 200%;
+    font-weight: bold;
+    align-items: center;
+    padding: 10px;
+}
+h2 {
+    font-size: 150%;
+    padding: 10px;
+}
+h3 {
+    font-size: 120%;
+    padding : 10px;
+}
+p {
+    line-height: 90%;
+    padding: 10px;
+}
+img {
+    
+    border: 5px #0000ff;
+    padding: 10px;
+    border-top-right-radius: 30px;
+    margin: 20px;
+    flex-grow: 2;
+    width: 50%;
+    max-width: 80%;
+}
+
+li {
+    display: inline;
+    margin-left: 50px;
+}
+ul {
+    display: inline;
+    margin-left: 50px;
+}
+header {
+    background-color: #d7d7f6;
+    text-align: center;
+    font-weight: bold;
+    
+}
+header img {
+    width: 50%;
+    max-width: 80%;
+    display: inline;
+}
+
+/* have the image span the top of the page. all the way at the top */
+header img {
+    width: 100%;
+    max-width: 100%;
+    display: inline;
+    /* no padding or margin or border */
+    padding: 0;
+    margin: 0;
+    border: 0;
+    /*max image height 20% of the viewport height */
+    max-height: 20vh;
+}
+
+/* hide class='skip' unless on focus */
+.skip {
+    display: none;
+}
+
+/* show class='skip' when on focus */
+.skip:focus {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    z-index: 100;
+}
+
+/* hide h1 in the header */
+header h1 {
+    display: none;
+}
+
+/* mave the nav bar below the image and make a hamburger menu */
+nav {
+    display: none;
+    background-color: #d7d7f6;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* add grid to the main section */
+/* display only 1 column on small screens */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+
+
+
