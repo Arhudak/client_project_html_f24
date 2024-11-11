@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Page 1</title>
 </head>
 <body>
-    <a href = "">Skip to Main Content</a>
     <header>
+        <a class = "skip" href="#main">Skip to Main content</a>
+        <div class="header-image">
         <img src="images/CAPS_banner.jpeg" alt="CAPS Banner">
         <nav>
             <ul>
                 <li><a href = "caps.html">Home</a></li>
                 <li><a href = "peercounseling.html">Peer Counciling</a></li>
-                <li><a href = "caps_staff.html">CAPS Staff</a></li>
+                <li><a href="/" class="current">CAPS Staff</a></li>
                 <li><a href = "research.html">Research</a></li>
             </ul>
         </nav>
@@ -66,9 +69,14 @@
             <li>Administrative Support Staff</li>
         </ul>
     </section>
-    <footer>
-        <p>CAPS Staff | <a href="https://caps.umich.edu/article/meet-our-staff">Meet Our Staff </a></p>
+        <footer>
+        <nav aria-label="Footer Buttons" class="footer-buttons">
+            <a href="appointment.html" class="btn appointment-btn">Make an Appointment</a>
+            <a href="urgent_support.html" class="btn support-btn">Urgent Support</a>
+        </nav>
+        <a href="https://caps.umich.edu/article/meet-our-staff">Meet Our Staff </a>
     </footer>
+    <script src="js/js.js"></script>
     
 </body>
 
